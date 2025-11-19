@@ -16,14 +16,14 @@
 <body>
   <!-- Announcement-bar -->
   <div id="announcement-bar"
-    class="container-md sticky top-0 left-0 w-full z-50 flex flex-col sm:flex-row items-center justify-between px-5 py-3.5 gap-3 sm:gap-0">
+    class="container-md sticky top-0 left-0 w-full z-50 flex flex-col sm:flex-row items-center justify-between px-5 py-3.5">
     <div>
       <span class="font-inter font-normal block">This is the first example of a sitewide notice.</span>
     </div>
     <div
       class="announcement-btn 2xs:hidden min-[1200px]:flex flex gap-5 h-auto 2xs:flex-col sm:flex-row 2xs:mt-3 sm:mt-0 2xs:w-full sm:w-fit">
       <div class="bg-skin btn text-black! hover:bg-transparent! hover:text-skin!">
-        <a href="#">Book now</a>  
+        <a href="#">Book now</a>
       </div>
       <div class="btn black-border-btn">
         <a href="#">Find A Stylist</a>
@@ -36,8 +36,7 @@
 
   <!-- Header -->
   <header class="header">
-    <nav
-      class="container-md flex justify-between fixed w-full z-50  items-center py-5">
+    <nav class="container-md flex justify-between fixed w-full z-50  items-center py-5">
       <a href="#"><img src="./assets/images/logo.png" /></a>
 
       <div class="hidden min-[1200px]:flex gap-6 items-center">
@@ -64,8 +63,7 @@
       </a>
 
       <button id="menuButton" class=" rounded focus:outline-none cursor-pointer min-[1200px]:hidden">
-        <svg id="menuIcon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true"
-          focusable="false">
+        <svg id="menuIcon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
           <path stroke="currentColor" stroke-width="2" stroke-linecap="round" d="M3 6h18M3 12h18M3 18h18" />
         </svg>
 
@@ -101,11 +99,12 @@
 
   <!-- Hero section -->
   <div class="hero-section">
-    <div class="h-screen w-full hero-gradiant z-50">
+    <div class="max-h-[470px] w-full -z-10 relative">
+      <div class="absolute inset-0 hero-gradiant"></div>
       <div class="relative inset-0 -z-10">
-        <img src="./assets/images/hero2.jpg" alt="hero img 1" class="h-screen w-screen object-cover" />
+        <img src="./assets/images/hero2.jpg" alt="hero img 1" class="max-h-[470px] w-screen object-cover" />
       </div>
-      <div class="hero-text absolute top-[59%] left-1/2 -translate-x-1/2 -translate-y-1/2 w-[inherit] px-6">
+      <div class="hero-text absolute top-[50%] items-center justify-self-center px-6 z-50">
         <h1 class="font-sinkin-sans-bold">Blake Charles Experience</h1>
       </div>
     </div>
@@ -113,15 +112,15 @@
 
   <!-- The Best Hair Salon -->
   <section>
-    <div class="relative flex 2xs:flex-col-reverse lg:flex-row">
-      <div id="img-container">
-        <img src="./assets/images/section2.jpg" alt="Salon">
+    <div class="grid 2xs:grid-cols-1 lg:grid-cols-2 relative">
+      <div class="relative h-full">
         <div class="absolute inset-0 img-gradiant-right"></div>
+        <img src="./assets/images/section2.jpg" alt="Salon" class="h-full">
       </div>
 
-      <div class="content-container-right">
+      <div class="2xs:order-first lg:order-last content-container-right">
         <div class="vertical-divider"></div>
-        <div class="inner-container-right">
+        <div class="inner-container-right relative">
           <h2>
             <span class="font-sinkin-sans-bold block">The Best Hair Salon</span>
             <span class="font-sinkin-sans-regular block">In San Francisco & Granite Bay</span>
@@ -144,7 +143,7 @@
 
   <!-- About Us -->
   <section>
-    <div class="relative flex 2xs:flex-col lg:flex-row bg-light-gray">
+    <div class="relative grid 2xs:grid-cols-1 lg:grid-cols-2 bg-light-gray">
 
       <div class="content-container-right">
         <div class="vertical-divider ml-[100px]"></div>
@@ -170,9 +169,9 @@
         </div>
       </div>
 
-      <div id="img-container" class="left-img-container">
+      <div class="relative">
         <div class="absolute inset-0 img-gradiant-left"></div>
-        <img src="./assets/images/about-us.jpg" alt="Salon">
+        <img src="./assets/images/about-us.jpg" alt="Salon" class="h-full">
       </div>
     </div>
   </section>
@@ -181,7 +180,7 @@
   <section class="experience-section">
     <div class="experience relative bg-[url('./assets/images/experience.jpg')] bg-cover bg-left">
       <div class="absolute inset-0 bg-[rgba(0,0,0,0.8)]"></div>
-      <div class="experience-main">
+      <div class="container">
         <h2>
           <span class="font-sinkin-sans-bold">The Blake Charles</span>
           <span class="font-sinkin-sans-regular block"><strong>Salon</strong> Experience</span>
@@ -215,6 +214,12 @@
         <img src="./assets/images/f-4.png" alt="Featured In" class="h-max">
         <img src="./assets/images/f-5.png" alt="Featured In" class="h-max">
         <img src="./assets/images/f-6.png" alt="Featured In" class="h-max">
+        <img src="./assets/images/f-1.png" alt="Featured In" class="img-1">
+        <img src="./assets/images/f-2.png" alt="Featured In" class="h-max">
+        <img src="./assets/images/f-3.png" alt="Featured In" class="h-max">
+        <img src="./assets/images/f-4.png" alt="Featured In" class="h-max">
+        <img src="./assets/images/f-5.png" alt="Featured In" class="h-max">
+        <img src="./assets/images/f-6.png" alt="Featured In" class="h-max">
       </div>
     </div>
   </section>
@@ -225,7 +230,7 @@
       <div class="horizontal-divider"></div>
       <div class="main">
         <!-- part 1 -->
-        <div class="footer-heading">
+        <div class="footer-heading 2xs:w-full min-[893px]:w-fit">
           <h3>Follow Us on Instagram</h3>
           <a href="#">@blakecharlessalon</a>
           <img src="./assets/images/footer-img.png" alt="footer image" class="mt-10 2xs:w-full min-[1150px]:w-fit">
@@ -237,7 +242,7 @@
             <div class="mt-3.5 w-fit">
               <a href="#">Private Events</a>
               <a href="career.html">Careers</a>
-              <a href="#">Model Days</a>
+              <a href="model-days.html">Model Days</a>
               <a href="#">ManeMatch</a>
               <a href="#">MedSpa Partner</a>
             </div>
@@ -259,7 +264,8 @@
                 class="w-full 2xs:w-fit min-[1150px]:w-full">
             </a>
           </div>
-          <div class="icons grid grid-cols-7 gap-5 mt-[142px] 2xs:mt-[30px] min-[1150px]:mt-[142px] w-fit 2xs:grid-cols-4 xs:grid-cols-5 500:grid-cols-7">
+          <div
+            class="icons grid grid-cols-7 gap-5 mt-[142px] 2xs:mt-[30px] min-[1150px]:mt-[142px] w-fit 2xs:grid-cols-4 xs:grid-cols-5 500:grid-cols-7">
             <div class="p-2">
               <a href="#"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
                   xmlns="http://www.w3.org/2000/svg">
@@ -365,6 +371,7 @@
         <!--  -->
       </div>
   </footer>
+
 
   <!-- Scripts -->
   <script src="./assets/js/main.js"></script>

@@ -44,23 +44,25 @@
     @apply box-border;
   }
   body {
-    @apply m-0 p-0 font-inter;
+    @apply m-0 p-0;
   }
   h1,
   .h1 {
-    @apply uppercase text-[64px] 2xs:text-center leading-[74px] 2xs:leading-10 500:leading-[50px] md:leading-[60px] lg:leading-[74px] 2xs:text-[30px] 500:text-[40px] md:text-[40px] lg:text-[50px] xl:text-[64px];
+    @apply uppercase text-[64px] 2xs:text-center leading-[74px] 2xs:leading-[30px] 500:leading-[50px] md:leading-[60px] lg:leading-[74px] 2xs:text-[25px] 500:text-[40px] md:text-[40px] lg:text-[50px] xl:text-[64px];
   }
   h2,
   .h2 {
-    @apply uppercase text-[48px] leading-[58px] 2xs:text-[21px] 2xs:leading-[30px] 500:leading-[45px] md:leading-[45px] lg:leading-[50px] xl:leading-[58px] 500:text-[30px] md:text-[30px] lg:text-[40px] xl:text-[48px];
+    @apply uppercase text-[48px] leading-[58px] 
+    2xs:text-[18px] 500:text-[24px] md:text-[30px] lg:text-[35px] xl:text-[48px] 
+    2xs:leading-[30px] 500:leading-[35px] md:leading-[45px] lg:leading-[50px] xl:leading-[58px];
   }
   h3,
   .h3 {
-    @apply uppercase text-[24px] 2xs:text-[20px] 500:text-[24px] leading-[34px] text-white font-sinkin-sans-bold;
+    @apply uppercase text-[24px] 2xs:text-[18px] 500:text-[20px] md:text-[22px] lg:text-[24px] leading-[34px] text-white font-sinkin-sans-bold;
   }
   h4,
   .h4 {
-    @apply uppercase text-[20px] text-white font-sinkin-sans-bold leading-[30px];
+    @apply uppercase text-[20px] 2xs:text-[18px] 500:text-[20px] text-white font-sinkin-sans-bold leading-[30px];
   }
   h5,
   .h5 {
@@ -114,13 +116,13 @@
   .content-container-right-career {
     @apply flex gap-10 2xs:gap-0 lg:gap-10 items-center my-20 2xs:my-[30px] 500:my-[60px] md:my-[110px] lg:my-[159px];
   }
-  .perks-and-benefits-section .card{
+  .perks-and-benefits-section .card {
     @apply w-fit justify-items-center justify-self-center;
   }
-  .job-opportunities-section .container{
+  .job-opportunities-section .container {
     @apply justify-self-center text-center;
   }
-  .job-opportunities-section .card-hover{
+  .job-opportunities-section .card-hover {
     @apply relative hover:cursor-pointer;
   }
 }
@@ -152,12 +154,6 @@
   .hero-section .hero-text {
     @apply text-white;
   }
-  #img-container {
-    @apply relative max-w-[756px] min-h-[654px] 2xs:min-h-0 2xs:max-w-fit lg:w-3/2 xl:max-w-[756px] xl:min-h-[654px];
-  }
-  .left-img-container {
-    @apply 2xs:min-h-0! xl:min-h-[575px]! w-7/2!;
-  }
   #img-container img {
     @apply w-full h-full object-cover;
   }
@@ -178,8 +174,11 @@
     @apply bg-black;
   }
   /* image and text container */
+  .experience-section .container {
+    @apply relative inset-0 text-center max-w-[1000px] justify-self-center py-20 2xs:px-5 lg:px-0;
+  }
   .experience-main {
-    @apply relative inset-0 text-center px-64 py-20 2xs:px-5! 500:px-[60px]! md:px-20! lg:px-32! xl:px-64! 2xs:py-[30px] 500:py-[50px] md:py-20;
+    @apply relative inset-0 text-center;
   }
   .featured-in-section .featured-in .img-1 {
     @apply h-fit self-center;
@@ -194,7 +193,7 @@
     @apply text-skin hover:underline;
   }
   .footer-heading a {
-    @apply text-[24px] text-skin font-inter font-bold;
+    @apply text-[24px] 2xs:text-base 500:text-[20px] md:text-[24px] text-skin font-inter font-bold;
   }
   .footer-experiance a {
     @apply text-skin font-inter font-normal block leading-[19px] mt-2.5;
@@ -205,17 +204,27 @@
   footer span {
     @apply text-white font-bold font-inter leading-[19px];
   }
-  .job-opportunities-section .heading{
+  .job-opportunities-section .heading {
     @apply text-black! mt-3.5;
   }
-  .job-opportunities-section .p{
+  .job-opportunities-section .p {
     @apply mt-3.5;
   }
-  .job-opportunities-section .a{
+  .job-opportunities-section .a {
     @apply uppercase font-inter font-bold flex gap-2.5 items-center pt-[4.5px] mt-3.5 justify-center after:absolute after:inset-0 after:w-full after:h-full transition;
   }
-  .perks-and-benefits-section .headeing{
-    @apply text-white w-fit text-center mt-7 max-w-[210px];
+  .perks-and-benefits-section .headeing {
+    @apply text-white w-fit text-center mt-7;
+  }
+  /* who */
+  #img-container-who {
+    @apply relative max-w-[756px] min-h-[550px] 2xs:min-h-0 2xs:max-w-fit lg:w-7/3 xl:max-w-[756px] xl:min-h-[550px];
+  }
+  .inner-container-right {
+    @apply mr-[100px] py-5 2xs:mx-5 lg:ml-0 lg:mr-[100px] 2xs:py-0 lg:py-5;
+  }
+  .content-container-right-who {
+    @apply flex gap-10 2xs:gap-0 lg:gap-10 items-center my-20 2xs:my-[30px] 500:my-[60px] md:my-[110px] lg:my-[180px];
   }
 }
 
@@ -243,11 +252,17 @@
 }
 @keyframes marquee {
   0% {
-    transform: translateX(0);
+    transform: translateX(0%);
   }
   100% {
-    transform: translateX(-50%);
+    transform: translateX(-100%);
   }
+  /* 0% {
+    transform: translate3d(var(--move-initial, 0), 0, 0);
+  }
+  100% {
+    transform: translate3d(var(--move-final, -100%), 0, 0);
+  } */
 }
 .marquee {
   animation: marquee 15s linear infinite;
@@ -258,7 +273,6 @@
 .swiper {
   width: 100%;
   /* position: relative; */
-
 }
 
 .swiper-slide {

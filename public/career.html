@@ -101,21 +101,22 @@
 
     <!-- Hero section -->
     <div class="hero-section">
-        <div class="h-screen w-full hero-gradiant z-50">
+        <div class="max-h-[537px] w-full -z-10 relative">
+            <div class="absolute inset-0 hero-gradiant"></div>
             <div class="relative inset-0 -z-10">
-                <img src="./assets/images/career-hero.jpg" alt="hero img 1" class="h-screen w-screen object-cover" />
+                <img src="./assets/images/career-hero.jpg" alt="hero img 1" class="max-h-[537px] w-screen object-cover" />
             </div>
-            <div class="hero-text absolute top-[59%] left-1/2 -translate-x-1/2 -translate-y-1/2 w-[inherit] px-6">
-                <h1 class="font-sinkin-sans-bold">Careers</h1>
+            <div class="hero-text absolute top-[50%] items-center justify-self-center px-6 z-50">
+                <h1 class="font-sinkin-sans-bold">Career</h1>
             </div>
         </div>
     </div>
 
     <!-- Join Our Team -->
     <section class="join-our-team-section">
-        <div class="relative flex 2xs:flex-col-reverse lg:flex-row">
-            <div id="img-container-careers">
-                <img src="./assets/images/join-team.png" alt="Salon" class="h-full!">
+        <div class="relative grid 2xs:grid-cols-1 lg:grid-cols-2">
+            <div class="relative">
+                <img src="./assets/images/join-our-team.png" alt="Salon" class="h-full!">
                 <div class="absolute top-[45%] left-[48%]"><svg width="44" height="48" viewBox="0 0 44 48" fill="none"
                         xmlns="http://www.w3.org/2000/svg">
                         <path
@@ -157,52 +158,52 @@
                 <div class="grid grid-cols-3 grid-rows-3 gap-x-5 gap-y-[55px] mt-[55px] 2xs:grid-cols-1 md:grid-cols-3">
                     <div class="card">
                         <img src="./assets/images/pb-1.png" alt="career">
-                        <h3 class="headeing">Competitive Pay</h3>
+                        <h3 class="headeing max-w-[210px]">Competitive Pay</h3>
                     </div>
                     <div class="card">
                         <img src="./assets/images/pb-2.png" alt="career">
-                        <h3 class="headeing">Product
+                        <h3 class="headeing max-w-[210px]">Product
                             Discounts</h3>
                     </div>
                     <div class="card">
                         <img src="./assets/images/pb-3.png" alt="career">
-                        <h3 class="headeing">Service
+                        <h3 class="headeing max-w-[210px]">Service
                             Discounts</h3>
                     </div>
 
                     <!-- line 2 -->
                     <div class="card">
                         <img src="./assets/images/pb-4.png" alt="career">
-                        <h3 class="headeing">Hands-on
+                        <h3 class="headeing max-w-[210px]">Hands-on
                             Training</h3>
                     </div>
                     <div class="card">
                         <img src="./assets/images/pb-5.png" alt="career">
-                        <h3 class="headeing">Access To
+                        <h3 class="headeing max-w-[310px]">Access To
                             Industry Experts</h3>
                     </div>
                     <div class="card">
                         <img src="./assets/images/pb-6.png" alt="career">
-                        <h3 class="headeing">401k Retirement
+                        <h3 class="headeing max-w-[310px]">401k Retirement
                             Savings Plan</h3>
                     </div>
 
                     <!-- line 3 -->
                     <div class="card">
                         <img src="./assets/images/pb-7.png" alt="career">
-                        <h3 class="headeing">Professional Growth Opportunities
+                        <h3 class="headeing max-w-[380px]">Professional Growth Opportunities
                         </h3>
                     </div>
                     <div class="card">
                         <img src="./assets/images/pb-8.png" alt="career">
-                        <h3 class="headeing">
+                        <h3 class="headeing max-w-[320px]">
                             <strong class="block">Medical, Dental,</strong>
                             <strong class="block">& Vision Insurance</strong>
                         </h3>
                     </div>
                     <div class="card">
                         <img src="./assets/images/pb-9.png" alt="career">
-                        <h3 class="headeing">Continuing Education
+                        <h3 class="headeing max-w-[377px]">Continuing Education
                             By Industry Experts</h3>
                     </div>
                 </div>
@@ -299,9 +300,9 @@
             </div>
             <!-- lg screen -->
             <div class="hidden min-[1200px]:block">
-                <div class="grid grid-cols-3 gap-[55px] mt-[55px]">
+                <div class="grid grid-cols-3 gap-[55px] mt-[55px] items-center text-center justify-center">
                     <div class="card-hover">
-                        <img src="./assets/images/jo-1.png" alt="job Opportunities" class="justify-self-center">
+                        <img src="./assets/images/jo-1.png" alt="job Opportunities" class="justify-self-center w-full object-cover">
                         <div class="container">
                             <h4 class="heading">Hair Stylists</h4>
                             <p class="p">Lorem ipsum dolor sit amet consectetur. Lacus at faucibus
@@ -318,8 +319,8 @@
                         </div>
                     </div>
                     <div class="card-hover">
-                        <img src="./assets/images/jo-2.png" alt="job Opportunities" class="justify-self-center">
-                        <div class="container">
+                        <img src="./assets/images/jo-2.png" alt="job Opportunities" class="justify-self-center w-full object-cover">
+                        <div class="container items-center">
                             <h4 class="heading">Apprenticeship Program</h4>
                             <p class="p">Lorem ipsum dolor sit amet consectetur. Lacus at faucibus
                                 lorem
@@ -335,7 +336,7 @@
                         </div>
                     </div>
                     <div class="card-hover">
-                        <img src="./assets/images/jo-3.png" alt="job Opportunities" class="justify-self-center">
+                        <img src="./assets/images/jo-3.png" alt="job Opportunities" class="justify-self-center w-full object-cover">
                         <div class="container">
                             <h4 class="heading">Makeup Artist</h4>
                             <p class="p">Lorem ipsum dolor sit amet consectetur. Lacus at faucibus
@@ -505,7 +506,7 @@
             <div class="horizontal-divider"></div>
             <div class="main">
                 <!-- part 1 -->
-                <div class="footer-heading">
+                <div class="footer-heading 2xs:w-full min-[893px]:w-fit">
                     <h3>Follow Us on Instagram</h3>
                     <a href="#">@blakecharlessalon</a>
                     <img src="./assets/images/footer-img.png" alt="footer image"
@@ -518,7 +519,7 @@
                         <div class="mt-3.5 w-fit">
                             <a href="#">Private Events</a>
                             <a href="career.html">Careers</a>
-                            <a href="#">Model Days</a>
+                            <a href="model-days.html">Model Days</a>
                             <a href="#">ManeMatch</a>
                             <a href="#">MedSpa Partner</a>
                         </div>
