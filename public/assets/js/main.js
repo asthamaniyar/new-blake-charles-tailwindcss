@@ -8,36 +8,48 @@ window.addEventListener("scroll", () => {
 });
 
 document.addEventListener("DOMContentLoaded", () => {
-  const btn = menuButton,
-    menu = mobileMenu,
-    open = menuIcon,
-    close = closeIcon;
+  const btn = menuButton;
+  const menu = mobileMenu;
+  const open = menuIcon;
+  const close = closeIcon;
 
-  const toggleMenu = (show) => {
-    menu.classList.toggle("opacity-100", show);
-    menu.classList.toggle("pointer-events-auto", show);
-    menu.classList.toggle("opacity-0", !show);
-    menu.classList.toggle("pointer-events-none", !show);
-    open.classList.toggle("hidden", show);
-    close.classList.toggle("hidden", !show);
+  const toggleMenu = (isOpen) => {
+    menu.classList.toggle("-translate-x-full", !isOpen);
+    menu.classList.toggle("translate-x-0", isOpen);
+
+    open.classList.toggle("hidden", isOpen);
+    close.classList.toggle("hidden", !isOpen);
   };
 
   btn.onclick = (e) => {
     e.stopPropagation();
-    toggleMenu(!menu.classList.contains("opacity-100"));
+    toggleMenu(menu.classList.contains("-translate-x-full"));
   };
-
-  menu.querySelectorAll("a").forEach(
-    (a) =>
-      (a.onclick = (e) => {
-        e.stopPropagation();
-        toggleMenu(false);
-      })
-  );
 
   document.onclick = (e) => {
-    if (!btn.contains(e.target) && !menu.contains(e.target)) toggleMenu(false);
+    if (!btn.contains(e.target) && !menu.contains(e.target)) {
+      toggleMenu(false);
+    }
   };
+
+  menu
+    .querySelectorAll("a")
+    .forEach((a) => (a.onclick = () => toggleMenu(false)));
+});
+
+// serch box
+const searchBox = document.getElementById("searchBox");
+const openSearch = document.getElementById("openSearch");
+const closeSearch = document.getElementById("closeSearch");
+
+openSearch.addEventListener("click", () => {
+  searchBox.classList.remove("hidden");
+  setTimeout(() => searchBox.classList.add("show"), 10);
+});
+
+closeSearch.addEventListener("click", () => {
+  searchBox.classList.remove("show");
+  setTimeout(() => searchBox.classList.add("hidden"), 100);
 });
 
 document.addEventListener("DOMContentLoaded", () => {
