@@ -1340,6 +1340,20 @@
     cursor: pointer;
     color: var(--color-white);
   }
+  .skin-btn {
+    background-color: var(--color-skin);
+    color: var(--color-black) !important;
+    &:hover {
+      @media (hover: hover) {
+        background-color: transparent !important;
+      }
+    }
+    &:hover {
+      @media (hover: hover) {
+        color: var(--color-skin) !important;
+      }
+    }
+  }
   #announcement-bar, #mobileMenu {
     background-color: var(--color-black);
   }

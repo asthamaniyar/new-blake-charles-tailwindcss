@@ -149,6 +149,9 @@
   nav button svg {
     @apply w-8 h-8 text-white cursor-pointer;
   }
+  .skin-btn{
+    @apply bg-skin text-black! hover:bg-transparent! hover:text-skin!;
+  }
   #announcement-bar,
   #mobileMenu {
     @apply bg-black;
