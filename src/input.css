@@ -247,6 +247,12 @@
   footer .featured-in-section {
     @apply bg-black;
   }
+  .swiper-contant .headeing{
+    @apply text-[20px];
+  }
+  .swiper-contant img{
+    @apply w-28 h-28;
+  }
 }
 
 /* custom css */

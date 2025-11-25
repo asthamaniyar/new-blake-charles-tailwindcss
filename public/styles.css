@@ -1670,6 +1670,13 @@
   footer .featured-in-section {
     background-color: var(--color-black);
   }
+  .swiper-contant .headeing {
+    font-size: 20px;
+  }
+  .swiper-contant img {
+    height: calc(var(--spacing) * 28);
+    width: calc(var(--spacing) * 28);
+  }
 }
 .hero-gradiant {
   background: radial-gradient( 114.6% 55.11% at 50% 58.09%, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0) 100% ), linear-gradient(180deg, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0) 50%);
