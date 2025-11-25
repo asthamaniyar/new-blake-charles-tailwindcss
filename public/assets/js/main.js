@@ -1,3 +1,4 @@
+// active nav
 window.addEventListener("scroll", () => {
   const nav = document.querySelector("nav");
   if (window.scrollY >= 50) {
@@ -7,6 +8,7 @@ window.addEventListener("scroll", () => {
   }
 });
 
+// menu
 document.addEventListener("DOMContentLoaded", () => {
   const btn = menuButton;
   const menu = mobileMenu;
@@ -37,21 +39,27 @@ document.addEventListener("DOMContentLoaded", () => {
     .forEach((a) => (a.onclick = () => toggleMenu(false)));
 });
 
-// serch box
-const searchBox = document.getElementById("searchBox");
-const openSearch = document.getElementById("openSearch");
-const closeSearch = document.getElementById("closeSearch");
+// serch
+document.addEventListener("DOMContentLoaded", () => {
+  const searchIcon = document.getElementById("search-icon");
+  const searchBox = document.getElementById("search-box");
 
-openSearch.addEventListener("click", () => {
-  searchBox.classList.remove("hidden");
-  setTimeout(() => searchBox.classList.add("show"), 10);
+  searchIcon.addEventListener("click", () => {
+    searchBox.classList.toggle("hidden"); // Toggles the 'hidden' class
+  });
+
+  // Optional: Close search box when clicking outside
+  document.addEventListener("click", (event) => {
+    if (
+      !searchBox.contains(event.target) &&
+      !searchIcon.contains(event.target)
+    ) {
+      searchBox.classList.add("hidden");
+    }
+  });
 });
 
-closeSearch.addEventListener("click", () => {
-  searchBox.classList.remove("show");
-  setTimeout(() => searchBox.classList.add("hidden"), 100);
-});
-
+// swiper
 document.addEventListener("DOMContentLoaded", () => {
   var swiper = new Swiper(".mySwiper", {
     loop: true,
