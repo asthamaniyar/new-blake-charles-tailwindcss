@@ -163,9 +163,6 @@
   #img-container img {
     @apply w-full h-full object-cover;
   }
-  /* #mobileMenu {
-    @apply ;
-  } */
   p span {
     @apply block;
   }
@@ -179,7 +176,6 @@
   .bg-black {
     @apply bg-black;
   }
-  /* image and text container */
   .experience-section .container {
     @apply relative inset-0 text-center max-w-[1000px] justify-self-center py-20 2xs:px-5 lg:px-0;
   }

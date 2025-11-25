@@ -45,10 +45,8 @@ document.addEventListener("DOMContentLoaded", () => {
   const searchBox = document.getElementById("search-box");
 
   searchIcon.addEventListener("click", () => {
-    searchBox.classList.toggle("hidden"); // Toggles the 'hidden' class
+    searchBox.classList.toggle("hidden");
   });
-
-  // Optional: Close search box when clicking outside
   document.addEventListener("click", (event) => {
     if (
       !searchBox.contains(event.target) &&
